@@ -73,8 +73,8 @@ dash_app.layout = html.Div([
 ])
 
 
-#image_filename1 = 'FakeRibbon.PNG'
-#image_filename2 = 'FakeRibbon1.PNG'
+image_filename1 = 'FakeRibbon.PNG'
+image_filename2 = 'FakeRibbon1.PNG'
 
 ##encoded_image1 = base64.b64encode(open(image_filename1, 'rb').read())
 #encoded_image2 = base64.b64encode(open(image_filename2, 'rb').read())
