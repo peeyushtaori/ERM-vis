@@ -56,7 +56,7 @@ VALID_USERNAME_PASSWORD_PAIRS = {
 #dash_app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 #auth = dash_auth.BasicAuth(dash_app, VALID_USERNAME_PASSWORD_PAIRS)
 
-app = dash.Dash('auth')
+#app = dash.Dash('auth')
 auth = dash_auth.BasicAuth(
     dash_app,
     (('ak1','1234',),)
