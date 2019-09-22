@@ -77,6 +77,7 @@ image_filename1 = 'FakeRibbon.PNG'
 image_filename2 = 'FakeRibbon1.PNG'
 
 ##encoded_image1 = base64.b64encode(open(image_filename1, 'rb').read())
+
 #encoded_image2 = base64.b64encode(open(image_filename2, 'rb').read())
 
 
@@ -95,7 +96,7 @@ Digital pioneers such as Equinor, United Airlines and formerly DowDuPont, who em
 
 These improvements come not from incremental changes but from the radical transformation of EHSS, which can help to reduce risk profiles at an enterprise-level and change the day-to-day roles of frontline workers and EHSS staff.
 The adoption of innovative technologies and solutions is not only transforming how organizations tackle their EHSS challenges but is also driving greater efficiency and intelligence. Technology, especially the availability of data and the accessibility of analytics and visualization tools, is enabling leading companies to move from hindsight to insight and in some instances, foresight.
-''', style={'background-image': html.Img(src = app.get_asset_url(image_filename1))})  ,
+''', style={'background-image': html.Img(src = dash_app.get_asset_url(image_filename1))})  ,
     dcc.Link('Safety Observations Classification and Theme identification', href='/Observations' ,
              style={'background-image': html.Img(src = dash_app.get_asset_url(image_filename1))}),
     html.Br(),
