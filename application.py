@@ -32,6 +32,9 @@ import dash_auth
 #-------
 
 
+#-------
+
+
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -80,21 +83,21 @@ dash_app.layout = html.Div([
 index_page = html.Div([
      html.H1('ERM ', style={'background-image': 'url(https://erm.com/)','color': 'green','size':'30'})
 ,
-    html.Img(src = app.get_asset_url(image_filename1)),
+    html.Img(src = dash_app.get_asset_url(image_filename1)),
     #html.Img(src='data:image/png;base64,{}'.format(encoded_image1.decode())),
   #  html.Img(src='data:image/png;base64,{}'.format(encoded_image2.decode())),
     dcc.Markdown('''
 The digitalization of EHSS: Approaching a tipping point
 
-Technology has been part of the environmental, health, safety and sustainability (EHSS) landscape for some time. However, over the past few years, we’ve seen this landscape revolutionized by digitalization and the industrialization and widespread commercialization of technology.
-Digital pioneers such as Equinor, United Airlines and formerly DowDuPont, who embraced innovative technologies early on, are already citing benefits that stretch well beyond EHSS metrics and are actually driving operational results. 
+Technology has been part of the environmental, health, safety and sustainability (EHSS) landscape for some time. However, over the past few years, weâ€™ve seen this landscape revolutionized by digitalization and the industrialization and widespread commercialization of technology.
+Digital pioneers such as Equinor, United Airlines and formerly DowDuPont, who embraced innovative technologies early on, are already citing benefits that stretch well beyond EHSS metrics and are actually driving operational results.Â 
 
 
 These improvements come not from incremental changes but from the radical transformation of EHSS, which can help to reduce risk profiles at an enterprise-level and change the day-to-day roles of frontline workers and EHSS staff.
 The adoption of innovative technologies and solutions is not only transforming how organizations tackle their EHSS challenges but is also driving greater efficiency and intelligence. Technology, especially the availability of data and the accessibility of analytics and visualization tools, is enabling leading companies to move from hindsight to insight and in some instances, foresight.
 ''', style={'background-image': html.Img(src = app.get_asset_url(image_filename1))})  ,
     dcc.Link('Safety Observations Classification and Theme identification', href='/Observations' ,
-             style={'background-image': html.Img(src = app.get_asset_url(image_filename1))}) ,
+             style={'background-image': html.Img(src = dash_app.get_asset_url(image_filename1))}),
     html.Br(),
    
      html.Br(),
@@ -552,7 +555,7 @@ page_1_layout = html.Div([
                     #    dcc.Link('Incident Injury Keyword extraction and Theme identification', href='/Incidents'),
                         html.H1('Safety Observations Classification and Theme identification ', style={'background-image': 'url(https://erm.com/)','color': 'green','size':'30'}),
                         
-                        html.Img(src='data:image/png;base64,{}'.format(encoded_image2.decode())),
+                        html.Img(src = dash_app.get_asset_url(image_filename1)),
                         html.Br(),
                         html.Br(),
                         dcc.Link('Main Page', href='/'),
@@ -1154,7 +1157,7 @@ page_2_layout = html.Div([
     html.Div(children = [
      #       dcc.Link('Safety Observations Classification and Theme identification', href='/Observations'),
          html.H1('Incident Injury Keyword extraction and Theme identification', style={'background-image': 'url(https://erm.com/)','color': 'green','size':'30'}),
-        html.Img(src = app.get_asset_url(image_filename2)),    
+        html.Img(src = dash_app.get_asset_url(image_filename2)),    
         #html.Img(src='data:image/png;base64,{}'.format(encoded_image2.decode())),
           html.Br(),
             dcc.Link('Main Page', href='/'),
