@@ -9,7 +9,7 @@ Flask-Compress==1.4.0
 future==0.17.1
 itsdangerous==1.1.0
 Jinja2==2.10.1
-joblib==0.13.2
+joblib==1.2.0
 MarkupSafe==1.1.1
 nltk==3.4.5
 numpy==1.17.2
@@ -42,7 +42,7 @@ idna==2.8
 importlib-metadata==0.23
 Jinja2==2.10.1
 jmespath==0.9.4
-joblib==0.13.2
+joblib==1.2.0
 MarkupSafe==1.1.1
 more-itertools==7.2.0
 numexpr==2.7.0
